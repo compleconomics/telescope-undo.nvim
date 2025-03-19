@@ -25,6 +25,8 @@ function get_previewer(opts)
         if opts.side_by_side == true then
           append = append .. " -s"
         end
+        -- append = append .. " --minus-style='syntax #440000' --plus-style='syntax #004400'"
+        append = append .. " --minus-style='syntax #333333' --plus-style='syntax #000000'"
         if has_powershell then
           return {
             "powershell",
